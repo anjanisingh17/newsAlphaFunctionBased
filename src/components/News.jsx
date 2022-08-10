@@ -11,11 +11,11 @@ const News = (props)=> {
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
 
-  // document.title = `AlphaNews - ${capitalizeFirstLetter(props.category)} `
+  
 
-    //  const capitalizeFirstLetter = (string)=> {
-    //     return string.charAt(0).toUpperCase() + string.slice(1);
-    //   }
+     const capitalizeFirstLetter = (string)=> {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
         
 
         const updateNews = async()=>{
@@ -37,6 +37,7 @@ const News = (props)=> {
         
         
         useEffect(()=>{
+          document.title = `AlphaNews - ${capitalizeFirstLetter(props.category)} `
           updateNews();
           // eslint-disable-next-line
         },[])
