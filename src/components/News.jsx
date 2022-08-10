@@ -17,15 +17,19 @@ export class News extends Component {
         category: PropTypes.string
     }
 
-        constructor(){
-            super();
+     capitalizeFirstLetter = (string)=> {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+      }
+      
+        constructor(props){
+            super(props);
             console.log('Inside constructor body');
             this.state = {
                     articles : [],
                     loading : false,
-                    page:1,
-
+                    page:1
             }
+            document.title = `AlphaNews - ${this.capitalizeFirstLetter(this.props.category)} `
         }    
 
         async componentDidMount(){
