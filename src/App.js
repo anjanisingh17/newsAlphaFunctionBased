@@ -17,7 +17,7 @@ export class App extends Component {
       <Navbar />
         <Routes>      
         <Route exact path='/' element={<News key="general" pageSize={3} country='in' category='general' />} > </Route>
-        <Route exact path='/newalpha2' element={<News key="general" pageSize={3} country='in' category='general' />} > </Route>
+        <Route exact path='/newsalpha' element={<News key="general" pageSize={3} country='in' category='general' />} > </Route>
           <Route exact path='/business' element={<News key="business" pageSize={3} country='in' category='business' />}></Route>
           <Route exact path='/entertainment' element={<News key="entertainment" pageSize={3} country='in' category='entertainment' />}></Route>
           <Route exact path='/general' element={<News key="general" pageSize={3} country='in' category='general' />}></Route>
