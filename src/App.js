@@ -32,7 +32,7 @@ export class App extends Component {
       <Navbar />
       <LoadingBar
         height= {3}
-        color='orange'
+        color='blue'
         progress={this.state.progress}
 
       />
