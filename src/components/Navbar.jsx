@@ -7,7 +7,7 @@ export class Navbar extends Component {
       <>
         <nav className="navbar navbar-expand-lg   navbar-light bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand" style={{background:'#000',fontWeight:'bold',padding:'5px 20px',fontSize:'25px'}}><span style={{color:'#fff'}}>NEWS</span><span style={{color:'orange',marginLeft:'5px'}}>ALPHA</span></a>
+            <a className="navbar-brand" href='/' style={{background:'#000',fontWeight:'bold',padding:'5px 20px',fontSize:'25px'}}><span style={{color:'#fff'}}>NEWS</span><span style={{color:'orange',marginLeft:'5px'}}>ALPHA</span></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
